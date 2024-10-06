@@ -1,0 +1,21 @@
+@import "src/shared/variables.scss";
+
+.section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.light {
+  background-color: $gray-04;
+}
+
+.dark {
+  background-color: $gray-03;
+}

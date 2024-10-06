@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 29px;
+    height: 72px;
+
+    h1 {
+        height: 40px;
+    }
+}
+
+.nav {
+    display: flex;
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 10px 32px;
+    }
+}
