@@ -1,0 +1,88 @@
+@import "src/shared/variables.scss";
+
+.hero {
+  padding-top: 32px;
+  padding-bottom: 70.8px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding-top: 100px;
+  padding-bottom: 80px;
+  h3 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+}
+
+.heroButton {
+  padding: 10px 32px;
+  background-color: $orange;
+}
+
+.heroDescription {
+  padding-top: 183px;
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+
+  p {
+    flex-basis: 460px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+  }
+}
+
+.tabsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-basis: 560px;
+}
+
+.tabContent {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+
+}
+
+.tabs {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+
+  .tab {
+    background-color: #1D1D1B;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+
+    &:last-child {
+      color: $gray-01;
+      background-color: white;
+    }
+  }
+}

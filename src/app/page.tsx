@@ -1,17 +1,12 @@
 import {Header} from "@/components/Header/ui/Header"
 import {SectionWrapper} from "@/components/SectionWrapper/ui/SectionWrapper"
 import s from './page.module.scss'
+import {HeroSection} from "@/sections/HeroSection/HeroSection"
 
 export default function Home() {
-  console.log(1)
   return (
     <>
-      <SectionWrapper backgroundColor={'dark'} backgroundImage={'/hero-bg.png'} sectionClass={s.hero}>
-        <Header />
-        <div style={{height: '600px'}}>
-
-        </div>
-      </SectionWrapper>
+      <HeroSection />
       <SectionWrapper backgroundColor={'light'}>
         <Header />
       </SectionWrapper>

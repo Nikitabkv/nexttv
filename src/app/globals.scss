@@ -3,7 +3,7 @@ body {
     background: #e3e3e3;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -22,6 +22,11 @@ h2 {
 }
 
 button {
+    font-family: inherit;
+    border: none;
+    color: white;
+    border-radius: 10px;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
