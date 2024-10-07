@@ -4,6 +4,7 @@ import {HeroSection} from "@/sections/HeroSection/HeroSection"
 import {SecondSection} from "@/sections/SecondSection/SecondSection"
 import s from './page.module.scss'
 import {PartnersSection} from "@/sections/PartnersSection/PartnersSection";
+import {ReportSection} from "@/sections/ReportSection/ReportSection";
 
 export default function Home() {
   return (
@@ -11,9 +12,7 @@ export default function Home() {
       <HeroSection />
       <SecondSection />
       <PartnersSection />
-      <SectionWrapper backgroundColor={'light'}>
-        <Header />
-      </SectionWrapper>
+      <ReportSection />
       <SectionWrapper backgroundColor={'dark'}>
         <Header />
       </SectionWrapper>
