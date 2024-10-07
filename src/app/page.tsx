@@ -1,15 +1,14 @@
 import {Header} from "@/components/Header/ui/Header"
 import {SectionWrapper} from "@/components/SectionWrapper/ui/SectionWrapper"
-import s from './page.module.scss'
 import {HeroSection} from "@/sections/HeroSection/HeroSection"
+import {SecondSection} from "@/sections/SecondSection/SecondSection"
+import s from './page.module.scss'
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <SectionWrapper backgroundColor={'light'}>
-        <Header />
-      </SectionWrapper>
+      <SecondSection />
       <SectionWrapper backgroundColor={'dark'}>
         <Header />
       </SectionWrapper>
