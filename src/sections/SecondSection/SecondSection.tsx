@@ -3,7 +3,7 @@ import {SectionWrapper} from "@/components/SectionWrapper/ui/SectionWrapper"
 
 export const SecondSection = () => {
   return (
-    <SectionWrapper backgroundColor={'light'}>
+    <SectionWrapper backgroundColor={'light'} link={'advantages'}>
       <div className={s.balanceWrapper}>
         <h2>
           Баланс между выручкой и удовлетворённостью пользователей

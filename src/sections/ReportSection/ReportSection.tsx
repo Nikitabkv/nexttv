@@ -9,7 +9,7 @@ const ReportRows = [
 
 export const ReportSection = () => {
   return (
-    <SectionWrapper backgroundColor={'light'} backgroundImage={'/report-bg.png'} sectionClass={s.reportSection}>
+    <SectionWrapper backgroundColor={'light'} backgroundImage={'/report-bg.png'} sectionClass={s.reportSection} link={'how-we-work'}>
       <div className={s.reportWrapper}>
         <h2>
           Подробные отчёты для вас и правообладателей

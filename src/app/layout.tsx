@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.scss"
 import { Onest } from 'next/font/google'
+import {Header} from "@/components/Header/ui/Header";
 
 const onest = Onest({
   weight: '400',
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={onest.className}>
+      <Header />
+      <main>
         {children}
+      </main>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 @import "src/shared/variables.scss";
 
 .hero {
+  margin-top: -70px;
   padding-top: 32px;
   padding-bottom: 70.8px;
 }
@@ -136,5 +137,32 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hero {
+      padding: 20px;
+  }
+  .tabsGroup {
+    flex-basis: 0;
+  }
+  .heroText {
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 39.6px;
+      letter-spacing: -0.04em;
+      text-align: left;
+    }
+  }
+  .heroDescription {
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 22px;
+
+    p {
+      flex-basis: 0;
+    }
   }
 }
