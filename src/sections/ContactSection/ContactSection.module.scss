@@ -23,6 +23,10 @@
   background-color: $gray-03;
   color: $black;
 
+  &:focus {
+    border: 1px solid $black;
+  }
+
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -39,7 +43,18 @@
   flex-direction: column;
   gap: 32px;
 
+  .emailInputWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invalidEmail {
+    display: none;
+  }
+
   .emailInput {
+    position: relative;
     border: none;
     background-color: $gray-03;
     padding-bottom: 16px;
@@ -52,6 +67,25 @@
     &::placeholder {
       color: $black;
     }
+
+    &:focus {
+      border-bottom: 1px solid $black;
+    }
+
+    &:invalid {
+      border-color: $error;
+    }
+  }
+
+  .emailInput:invalid ~ .invalidEmail {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    color: $error;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12.75px;
+    letter-spacing: 0.5px;
   }
 
   label {

@@ -9,7 +9,10 @@ export const ContactSection = () => {
         <form className={s.form}>
           <textarea className={s.textInput} placeholder="Напишите свой вопрос"/>
           <div className={s.rightSide}>
-            <input className={s.emailInput} type="email" placeholder="Введите e-mail"/>
+            <div className={s.emailInputWrapper}>
+              <input className={s.emailInput} type="email" placeholder="Введите e-mail"/>
+              <span className={s.invalidEmail}>Не правильно указана почта</span>
+            </div>
             <label>
               <input className={s.inputCheckbox} type="checkbox"/>
               <span>
