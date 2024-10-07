@@ -1,10 +1,8 @@
-import {Header} from "@/components/Header/ui/Header"
-import {SectionWrapper} from "@/components/SectionWrapper/ui/SectionWrapper"
 import {HeroSection} from "@/sections/HeroSection/HeroSection"
 import {SecondSection} from "@/sections/SecondSection/SecondSection"
-import s from './page.module.scss'
-import {PartnersSection} from "@/sections/PartnersSection/PartnersSection";
-import {ReportSection} from "@/sections/ReportSection/ReportSection";
+import {PartnersSection} from "@/sections/PartnersSection/PartnersSection"
+import {ReportSection} from "@/sections/ReportSection/ReportSection"
+import {ContactSection} from "@/sections/ContactSection/ContactSection"
 
 export default function Home() {
   return (
@@ -13,9 +11,7 @@ export default function Home() {
       <SecondSection />
       <PartnersSection />
       <ReportSection />
-      <SectionWrapper backgroundColor={'dark'}>
-        <Header />
-      </SectionWrapper>
+      <ContactSection />
     </>
   );
 }
