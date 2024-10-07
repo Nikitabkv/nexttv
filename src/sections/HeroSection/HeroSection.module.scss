@@ -60,7 +60,6 @@
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-
 }
 
 .tabs {
@@ -75,6 +74,12 @@
       background-color: #1D1D1B;
     }
 
+    &:hover {
+      &:not(.tabActive) {
+        color: $black;
+      }
+    }
+
     color: $gray-01;
     background-color: white;
     padding: 10px 0;
@@ -86,6 +91,50 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .tabsGroup {
+    flex-basis: 336px;
+  }
+  .heroDescription {
+    padding-top: 120px;
+    gap: 79px;
+    p {
+      flex-basis: 275px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 33.6px;
+    }
+  }
+  .tabs {
+    .tab {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+  }
+  .heroText {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    h3 {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 57.2px;
+      letter-spacing: -0.04em;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+  .tabContent {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
     text-align: left;
   }
 }
