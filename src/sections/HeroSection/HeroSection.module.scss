@@ -31,6 +31,10 @@
 .heroButton {
   padding: 10px 32px;
   background-color: $orange;
+
+  &:hover {
+    background-color: $dark-orange;
+  }
 }
 
 .heroDescription {
