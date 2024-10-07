@@ -1,18 +1,34 @@
 import {SectionWrapper} from "@/components/SectionWrapper/ui/SectionWrapper"
 import s from './PartnersSection.module.scss'
-import Image from "next/image"
+import Image from "next/image";
+
+const images = [
+  '/partners/clickwave.png',
+  '/partners/zyphronix.png',
+  '/partners/NovaSphere.png',
+]
+
+const ResponsiveImage = ({path}: { path: string }) => {
+
+  return (
+    <div className={s.imageContainer}>
+      <Image layout="fill" className={s.image} src={path} alt={path}/>
+    </div>
+  )
+}
 
 export const PartnersSection = () => {
+
   return (
     <SectionWrapper backgroundColor={'dark'}>
       <div className={s.partnersWrapper}>
         <h2>Наши партнёры по монетизации</h2>
         <div className={s.partnersLogos}>
-          <Image src={'/partners/clickwave.png'} width={177} height={55} alt={'ClickWave'} />
-          <Image src={'/partners/zyphronix.png'} width={102} height={71} alt={'ClickWave'} />
-          <Image src={'/partners/NovaSphere.png'} width={192} height={61} alt={'ClickWave'} />
+          {images.map((image, index) => (
+            <ResponsiveImage key={index} path={image} />
+          ))}
         </div>
       </div>
     </SectionWrapper>
-  );
+  )
 }

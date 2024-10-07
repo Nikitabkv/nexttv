@@ -4,6 +4,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: top;
+  padding: 40px;
 }
 
 .container {
@@ -17,4 +18,10 @@
 
 .dark {
   background-color: $gray-03;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
 }
